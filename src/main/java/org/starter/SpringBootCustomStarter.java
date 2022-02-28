@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 public class SpringBootCustomStarter {
 
     @Bean
-    public void sayHello() {
-        System.out.println("Hello World!");
+    public HelloWorld sayHello() {
+        return new HelloWorld();
     }
 }
